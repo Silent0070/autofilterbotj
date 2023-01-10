@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24113746'))
-API_HASH = environ.get('API_HASH', '333e9dc612b20b85a2da506ed3ff1a50')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5528278955:AAGDrQkxSXNjm7aVGsnuVkBhYuBESxyr2_s')
+API_ID = int(environ.get('API_ID', '29977657'))
+API_HASH = environ.get('API_HASH', 'faf1baf95e054c960942031d7bc4b1e8')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5874493914:AAEL4qksvcCJVvEtld_TREalwqzbYnPAJcI')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -22,7 +22,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/8dc3715008f6cf89930bc.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5454779498').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5382600570').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001629324290').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5047601096').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -32,12 +32,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jnanesh:jnanesh@cluster0.8pzxa6s.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Niranjan:Niranjan1!@cluster0.qlhxqmp.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "jnanesh")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jnanesh_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001557802343'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001870106325'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001695164314')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -65,7 +65,7 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'https://dulink.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '3d818e7416f0d2ca600abc1c6216d088535393dd')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '75502647081efc1a49bb2b903bfcffbaa3d5ccaf')
 
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 60))
 SELF_DELETE = environ.get('SELF_DELETE', True)
